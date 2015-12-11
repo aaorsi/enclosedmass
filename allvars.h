@@ -6,21 +6,19 @@
 #define dprintf(expr) printf(#expr " = %f\n", expr)                                  
 #define dprints(expr) printf(#expr " = %s\n", expr)                                       
 #define SQR(a) ((a)*(a))                                                                  
-#define NCELLMAX 10000                   
-#define NMAX 100000                                                                  
+#define NCELLMAX 207000              
+#define NMAX 20618                                                               
 #define NMAXDM 2000000
 #define NBINMAX 100                                                                       
-#define NCHARMAX 255                                                             
+#define NCHARMAX 255                                                            
                                        
 typedef struct {                                                                          
     unsigned long ioc;
-	unsigned long id; 
+	unsigned long id;
+float masa; 
     float x;
    	float y;
 	float z;
-	float vx;
-	float vy;
-	float vz;
 } particle;
                                                                               
 extern float CellSize; 
@@ -28,3 +26,4 @@ extern int NCells;
 extern unsigned int NCellTotal; 
 extern int NRunXX, nXX, Seed;
 extern float LBox;
+extern int LogBins;
