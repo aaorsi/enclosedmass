@@ -221,7 +221,7 @@ printf("LBox: %E\n",LBox);
 //
 //
 
-               if (dist < pow(10,RMax) && idCen != idPart)
+               if (dist < pow(10,RMax) && dist > 0)
                {
 //                printf("dist %f dBin %d idPart %d\n",dist,dBin,idPart);
 
